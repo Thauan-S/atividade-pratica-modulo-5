@@ -17,10 +17,8 @@ const Clientes = () => {
 
   return (
     <div>
-  
-       
       <main>
-      <Table clientes={clientes} />
+        <Table clientes={clientes} />
       </main>
     </div>
   );

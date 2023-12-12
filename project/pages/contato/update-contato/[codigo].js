@@ -95,7 +95,15 @@ const UpdateContato = () => {
             />
           </div>
           <div className="mb-3 row">
-            <textarea style={{marginLeft:"11px" ,borderRadius:"5px"}} value={contato.mensagem} name="mensagem" onChange={handleInputChange} className="col-11 col-sm-5" rows="3" id="textarea"></textarea>
+            <textarea
+              style={{ marginLeft: "11px", borderRadius: "5px" }}
+              value={contato.mensagem}
+              name="mensagem"
+              onChange={handleInputChange}
+              className="col-11 col-sm-5"
+              rows="3"
+              id="textarea"
+            ></textarea>
           </div>
           <button onClick={handleUpdateContato} className="btn btn-primary">
             Submit
