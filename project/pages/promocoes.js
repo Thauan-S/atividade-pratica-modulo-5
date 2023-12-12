@@ -174,10 +174,9 @@ const Promocoes = () => {
                     </a>
                   </div>
                 </div>
-                <div  className="card  border-info  ">
+                <div className="card  border-info  ">
                   <img
                     src="img/Dubai.jpg"
-                   
                     className="card-img-top img-card "
                     alt="..."
                   />

@@ -18,7 +18,6 @@ const DeleteContato = () => {
   };
   return (
     <>
-      
       <HeadComponent title={"Contato | Exclusão"} />
       <main>
         <fieldset className="container-fluid" disabled="">
