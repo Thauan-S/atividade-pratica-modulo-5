@@ -26,7 +26,7 @@ const Table = ({ clientes, reservas, contatos, destinos }) => {
                 <td>{i.telefone}</td>
                 <td>{i.email}</td>
                 <td>{i.cep}</td>
-                <td>{i.dataNascimento}</td>
+                <td>{moment(i.dataNascimento).format("DD/MM/YYYY")}</td>
                 <td>
                   <Link
                     href={`/clientes/update-clientes/${i.id}`}
@@ -76,8 +76,8 @@ const Table = ({ clientes, reservas, contatos, destinos }) => {
               <tr key={index}>
                 <td>{i.id}</td>
                 <td>{i.cliente.nome}</td>
-                <td>{moment(i.dataReserva).format("LLL")}</td>
-                <td>{moment(i.dataViagem).format("LLL")}</td>
+                <td>{moment(i.dataReserva).format("DD/MM/YYYY")}</td>
+                <td>{moment(i.dataViagem).format("DD/MM/YYYY")}</td>
                 <td>{i.pacoteDeViagem.destino}</td>
                 <td>
                   <Link

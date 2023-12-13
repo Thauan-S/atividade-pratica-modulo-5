@@ -29,10 +29,11 @@ const Cadastro = () => {
   };
   return (
     <>
+    <main>
       <HeadComponent title={"Tropical | Cadastro-Cliente"} />
       <div className="container-fluid">
         <div className="row">
-          <div className=" col">
+          <div className=" col col-md-4">
             <label htmlFor="nome" className="form-label">
               Nome
             </label>
@@ -100,7 +101,7 @@ const Cadastro = () => {
           </div>
         </div>
         <div className="mb-3 row">
-          <div className="col-10">
+          <div className="col-10 col-md-3">
             <label htmlFor="email" className="form-label">
               Email
             </label>
@@ -153,7 +154,7 @@ const Cadastro = () => {
           </div>
         </div>
       </div>
-      <main></main>
+      </main>
     </>
   );
 };

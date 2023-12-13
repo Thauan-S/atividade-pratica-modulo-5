@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Table from "@/components/table";
+import HeadComponent from "@/components/head";
 const Clientes = () => {
   const [clientes, setClientes] = useState(null);
   useEffect(() => {
@@ -16,11 +17,10 @@ const Clientes = () => {
   }, []);
 
   return (
-    <div>
-      <main>
-        <Table clientes={clientes} />
-      </main>
-    </div>
+    <main>
+      <HeadComponent title={" Clientes | Lista"} />
+      <Table clientes={clientes} />
+    </main>
   );
 };
 

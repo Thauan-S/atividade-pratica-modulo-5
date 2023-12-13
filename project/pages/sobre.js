@@ -1,8 +1,10 @@
+import HeadComponent from "@/components/head";
 import React from "react";
 
 const Sobre = () => {
   return (
     <main>
+      <HeadComponent title={"Tropical  Sobre nós"}/>
       <div className="container-fluid">
         <div className=" bg-secondary text-black text-center">
           <h1 className=" text-center ">Nosso propósito:</h1>

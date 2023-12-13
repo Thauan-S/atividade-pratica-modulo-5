@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "../../styles/gerenciamento.module.css";
-import NavBar from "@/components/navBar";
-import Link from "next/link";
 import DropDown from "@/components/dropDown";
 import HeadComponent from "@/components/head";
 const Gerenciamento = () => {
@@ -31,7 +29,7 @@ const Gerenciamento = () => {
     },
   ];
   return (
-    <>
+    <><main>
       <HeadComponent title={"Tropical | Admin"} />
       <div className={`${styles.min} text-center`}>
         <h1 className={`${styles.titulo}`}>Administração</h1>
@@ -78,6 +76,7 @@ const Gerenciamento = () => {
           </div>
         </div>
       </div>
+      </main>
     </>
   );
 };
