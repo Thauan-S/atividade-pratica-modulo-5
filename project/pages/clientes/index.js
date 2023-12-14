@@ -122,7 +122,7 @@ const Cadastro = () => {
             <label htmlFor="senha" className="form-label">
               Senha
             </label>
-            <div className="col-6">
+            <div className="col-6 col-md-2">
               <input
                 id="senha"
                 className="form-control "
