@@ -10,7 +10,7 @@ const DeleteCliente = () => {
     axios
       .delete("http://localhost:8080/clientes/" + clienteId)
       .then(() => {
-        router.push("/cadastro/clientes");
+        router.push("/clientes/lista");
       })
       .catch((error) => {
         console.error("não foi possível excluir o cliente", clienteId, error);

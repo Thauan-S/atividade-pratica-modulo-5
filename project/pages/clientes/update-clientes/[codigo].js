@@ -34,7 +34,7 @@ const UpdateClientes = () => {
     axios
       .put("http://localhost:8080/clientes/" + cliente.id, cliente)
       .then((response) => {
-        router.push("/cadastro/clientes");
+        router.push("/clientes/lista");
       })
       .catch((error) => {
         console.error("erro ao editar o cliente de id", codigo);
